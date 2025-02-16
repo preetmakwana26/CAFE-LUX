@@ -1,0 +1,175 @@
+<html>
+ <head>
+  <title>
+   Cafe
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            background-color: #1a2b48;
+            color: white;
+            width: 25%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .sidebar nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .sidebar .buy-now {
+            background-color: #d35400;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .sidebar .address {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .main-content {
+            width: 75%;
+            position: relative;
+        }
+        .main-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(210, 84, 0, 0.7);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px;
+        }
+        .overlay h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .overlay p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .overlay .hours {
+            font-size: 14px;
+            margin-top: auto;
+        }
+        .overlay .hours span {
+            font-size: 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+            }
+            .main-content {
+                width: 100%;
+            }
+            .overlay {
+                padding: 20px;
+            }
+            .overlay h1 {
+                font-size: 32px;
+            }
+            .overlay p {
+                font-size: 16px;
+            }
+            .overlay .hours span {
+                font-size: 20px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="sidebar">
+    <div>
+     <img alt="Cafe logo" height="100" src="https://storage.googleapis.com/a1aa/image/kLZuvjC7I__ua9SPhDxdeOdarxRqrkYiHnMzPsIa7fk.jpg" width="100"/>
+     <nav>
+      <a href="#">
+       HOME
+      </a>
+      <a href="#">
+       ABOUT US
+      </a>
+      <a href="#">
+       GALLERY
+      </a>
+      <a href="#">
+       MENU
+      </a>
+      <a href="#">
+       CONTACT
+      </a>
+     </nav>
+    </div>
+    <div>
+     <a class="buy-now" href="#">
+      BUY NOW
+     </a>
+     <div class="address">
+      Level 13, 2 Elizabeth St,
+      <br/>
+      Melbourne, Victoria 3000,
+      <br/>
+      Australia
+     </div>
+    </div>
+   </div>
+   <div class="main-content">
+    <img alt="Cafe interior" height="600" src="https://storage.googleapis.com/a1aa/image/5-z5ZQCOOEWN5CNvcoD5vq6EjI_IlrN4c3sDBcSkreo.jpg" width="800"/>
+    <div class="overlay">
+     <div>
+      <h1>
+       Welcome to our cafe
+      </h1>
+      <p>
+       Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+      </p>
+     </div>
+     <div class="hours">
+      WE ARE OPEN
+      <br/>
+      7 DAYS A WEEK
+      <br/>
+      <span>
+       8AM - 9PM
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
